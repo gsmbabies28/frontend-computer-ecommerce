@@ -12,15 +12,13 @@ const Profile = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     
-    
     useEffect(()=>{
 
        fetchAllOrder();
 
     },[user.isAdmin])
-    console.log(order)
+    
     function fetchAllOrder(){
-
         if(user.isAdmin){
             const url = `${process.env.REACT_APP_API_URL}/b5/users/all-orders`;
             fetch(url,{

@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import Banner from '../components/Banner';
 import Highlights from '../components/Highlights';
 // import FeaturedProducts from '../components/FeaturedProducts';

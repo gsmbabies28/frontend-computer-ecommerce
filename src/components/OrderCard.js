@@ -3,6 +3,7 @@ import { Table } from "react-bootstrap";
 const OrderCard = ({order}) => {
 
     const {orderedOn, totalPrice, productsOrdered,userId} = order;
+
     const date = new Date(orderedOn)
 
     return (
@@ -11,7 +12,7 @@ const OrderCard = ({order}) => {
                         <tr> 
                             <th  className="bg-secondary" colSpan={4}>
                                 <div className="d-flex justify-content-between">
-                                    <span>Ordered by: {userId.firstName}</span>Ordered on: { date.toLocaleDateString() }
+                                    <span>Ordered by: {userId?.firstName}</span>Ordered on: { date.toLocaleDateString() }
                                 </div>
                             </th>
                         </tr>
