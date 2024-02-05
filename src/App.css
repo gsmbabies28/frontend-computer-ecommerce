@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html{
+  font-size: 1.2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.search {
+  width: 100%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.home-text h1{
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Body */
+  font-family: Roboto;
+  font-size: 74px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 55px; /* 74.324% */
+  text-transform: capitalize;
+}
+
+.home-text p{
+  color:  #555353;
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Paragraph - Larg */
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px; /* 183.333% */
+  text-transform: capitalize;
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-text button{
+    display: inline-flex;
+    padding: 9px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background:  #1E2832;
   }
+
+  .text-button{
+    color:  #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Button - Larg */
+    font-family: Roboto;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .shop-icon{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Font Awesome 6 Free";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  #shop-product h2{
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  #shop-product h6{
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  #shop-product span{
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  #shop-product .price{
+    color:  #000;
+    text-align: left;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Span */
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+.home{
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)),
+  url('https://c8.alamy.com/comp/HTGY1N/seamless-background-texture-with-a-personal-computer-accessories-vector-HTGY1N.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
