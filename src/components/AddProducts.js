@@ -9,7 +9,7 @@ const AddProducts = ({show, handleClose, setProducts,products}) => {
     const [showSubmit, setShowSubmit] = useState(true)
     
     useEffect(()=>{
-        if(name!='' && description!='' && price!=''){
+        if(name!=='' && description!=='' && price!==''){
             setShowSubmit(false)
         }
     },[name,description,price])

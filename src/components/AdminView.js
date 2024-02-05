@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import AddProducts from './AddProducts';
 import ProductList from './subcomponents/ProductList';
+import { NavLink } from 'react-router-dom';
 
 function AdminView() {
     const [show, setShow] = useState(false);
@@ -145,7 +146,9 @@ function AdminView() {
         <h1>Admin DashBoard</h1>
         <div className='buttons'>
             <Button variant="primary" onClick={handleShow}>Add Products</Button>
-            <button className='btn btn-success mx-3'>Show All Orders</button>
+            <NavLink to="/profile">
+                <button className='btn btn-success mx-3'>Show All Orders</button>
+            </NavLink>
         </div> 
         <div className='products mt-5'>
             <Table striped bordered hover size="sm">
